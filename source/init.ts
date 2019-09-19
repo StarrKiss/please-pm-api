@@ -22,3 +22,5 @@ let mainDB =  low(adapter);
 
 mainDB.defaults({packages : [], count: 0})
 	.write();
+
+fs.mkdir("packageBinaries")

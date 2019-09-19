@@ -1,0 +1,7 @@
+author = "dylanaraps"
+packagename = "neofetch"
+deps = [
+"bash",
+"ncurses"
+]
+packagedesc = "Screenfetch like sysinfo tool"

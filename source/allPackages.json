@@ -8,6 +8,15 @@
         "other"
       ],
       "packagedesc": "This is a package"
+    },
+    {
+      "author": "dylanaraps",
+      "packagename": "neofetch",
+      "deps": [
+        "bash",
+        "ncurses"
+      ],
+      "packagedesc": "Screenfetch like sysinfo tool"
     }
   ],
   "count": 0

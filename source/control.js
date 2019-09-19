@@ -53,15 +53,21 @@ var pleasePackage = /** @class */ (function () {
 }());
 function generatePackage(pathToPackage) {
     return __awaiter(this, void 0, void 0, function () {
-        var tempData, tempPackage;
+        var tempData, tempPackage, binaryPath;
         return __generator(this, function (_a) {
             tempData = toml.parse(fs.readFileSync(pathToPackage + 'please.toml', 'utf-8'));
             tempPackage = new pleasePackage(tempData.author, tempData.packagename, tempData.deps, tempData.packagedesc);
             mainDB.get("packages")
                 .push({ author: tempPackage.AuthorName, packagename: tempPackage.packageName, deps: tempPackage.deps, packagedesc: tempPackage.packageDesc })
                 .write();
+            binaryPath = pathToPackage + tempPackage.packageName;
+            fs.copyFile(binaryPath, 'packageBinaries/' + tempPackage.packageName, function (err) {
+                if (err)
+                    throw err;
+                console.log('source.txt was copied to destination.txt');
+            });
             return [2 /*return*/];
         });
     });
 }
-generatePackage("/home/hackerman/Documents/packageAPI/source/");
+generatePackage('/home/hackerman/Documents/packageAPI/examplepackage/');
