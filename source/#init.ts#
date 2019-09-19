@@ -1,0 +1,11 @@
+const low = require('lowdb')
+const os = require('os');
+const fs = require('file-system');
+
+async function Setup(){
+
+
+      fs.writeFile(packagesDatabase.json, "", e => )
+
+
+}

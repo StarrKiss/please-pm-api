@@ -1,0 +1,19 @@
+{
+  "name": "packageAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^12.7.5",
+    "file-system": "^2.2.2",
+    "lowdb": "^1.0.0",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

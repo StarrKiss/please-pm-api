@@ -1,0 +1,10 @@
+title = "Example"
+
+[packageinfo]
+	author = "Me!"
+	packagename = "testpackage"
+	deps = [
+	"bash",
+	"other"
+	]
+	packagedesc = "This is a package"
